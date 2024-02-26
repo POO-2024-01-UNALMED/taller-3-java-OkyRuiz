@@ -30,6 +30,9 @@ public class Control {
 	public void setCanal(int canal) {
 		tv.setCanal(canal);
 	}
+	public void setVolumen(int volumen) {
+		tv.setVolumen(volumen);
+	}
 	//METODOS SETTER Y GETTER DE TV
 	public void setTv(TV tv) {
 		this.tv=tv;

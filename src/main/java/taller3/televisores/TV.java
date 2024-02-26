@@ -23,10 +23,10 @@ public class TV {
 	}
 	
 	//CONTEO DE TELEVISORES CREADOS.
-		public static void setnumTV(int numTV) {
+		public static void setNumTV(int numTV) {
 			TV.numTV = numTV;
 		}
-		public static int getnumTV() {
+		public static int getNumTV() {
 			return TV.numTV;
 		}
 	
