@@ -9,32 +9,32 @@ public class Control {
 		tv.setControl(this);
 	}
 	public void turnOn() {
-		this.tv.turnOn();
+		tv.turnOn();
 	}
 	public void turnOff() {
-		this.tv.turnOff();
+		tv.turnOff();
 	}
 	public void canalUp() {
-		this.tv.canalUp();
+		tv.canalUp();
 	}
 	public void canalDown() {
-		this.tv.canalDown();
+		tv.canalDown();
 	}
 	public void volumenUp() {
-		this.tv.volumenUp();
+		tv.volumenUp();
 	}
 	public void volumenDown() {
-		this.tv.volumenDown();
+	    tv.volumenDown();
 	}
 	public void setCanal(int canal) {
-		this.tv.setCanal(canal);
+		tv.setCanal(canal);
 	}
 	//METODOS SETTER Y GETTER DE TV
 	public void setTv(TV tv) {
 		this.tv=tv;
 	}
 	public TV getTv() {
-		return this.tv;
+		return tv;
 	}
 
 }
