@@ -14,22 +14,31 @@ public class TV {
 	public TV (Marca marca, boolean estado) {
 		this.marca= marca;
 		this.estado= estado;
-		canal=1;
-		volumen=1;
-		precio=500;	
+		this.canal=1;
+		this.volumen=1;
+		this.precio=500;	
 		TV.numTV++;
+		
 	}
+	//CONTEO DE TELEVISORES CREADOS.
+		public static void setnumTV(int numTV) {
+			TV.numTV= numTV;
+		}
+		public static int getnumTV() {
+			return TV.numTV;
+		}
+	
 	//METODOS SET Y GET MARCA
 	public void setMarca(Marca marca) {
 		this.marca= marca;
 	}
-	public Marca GetMarca() {
+	public Marca setMarca() {
 		return marca;
 	}
 	
 	//METODOS SET Y GET CANAL
 	public void setCanal(int canal) {
-		if (canal>0 && canal<=120) {
+		if (this.estado && canal>=1 && canal<=120) {
 		   this.canal= canal;
 		   }
 	}
@@ -38,16 +47,16 @@ public class TV {
 	}
 	
 	//METODOS SET Y GET PRECIO
-	public void SetPrecio(int precio) {
+	public void setPrecio(int precio) {
 		this.precio= precio;
 	}
-	public int GetPrecio() {
+	public int getPrecio() {
 		return precio;
 	}
 	
 	//METODOS SET Y GET VOLUMEN
 	public void SetVolumen(int volumen) {
-		if (volumen>=0 && volumen<=7) {
+		if (this.estado && volumen>=0 && volumen<=7) {
 		    this.volumen=volumen;
 		}	
 	}
@@ -61,14 +70,6 @@ public class TV {
 	 public Control getControl() {
 		 return control;
 	 }
-	
-	//CONTEO DE TELEVISORES CREADOS.
-	public static void setnumTV(int i) {
-		TV.numTV= i;
-	}
-	public static int getnumTV() {
-		return TV.numTV;
-	}
 	
 	//METODOS PARA CAMBIAR ESTADO.
 	public void turnOn() {
