@@ -5,7 +5,7 @@ public class Marca {
 	
 	//CONSTRUCTOR
 	public Marca(String nombre) {
-		this.nombre= nombre;	
+		this.setNombre(nombre);	
 	}
 	
 	//METODO SET

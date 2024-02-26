@@ -8,6 +8,7 @@ public class Control {
 		
 		tv.setControl(this);
 	}
+	
 	public void turnOn() {
 		tv.turnOn();
 	}
